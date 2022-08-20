@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">صِلة</string>
+
+
+    <string-array name="usertype">
+        <item>طفل</item>
+        <item>مسؤول رعاية</item>
+        <item>اخصائي</item>
+
+    </string-array>
+</resources>

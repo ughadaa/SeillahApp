@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:background="@color/bg"
+>
+
+    <EditText
+            android:layout_width="241dp"
+            android:layout_height="52dp"
+
+            android:padding="11dp"
+
+            android:background="@drawable/border"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/TheCGE"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="البريد الالكتروني لمسؤول الرعاية" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+    <TextView
+            android:text="الرجاء ادخال البريد الالكتروني لمسؤول الرعاية"
+            android:layout_width="267dp"
+            android:layout_height="40dp"
+            android:id="@+id/textView5"
+            android:layout_marginTop="68dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+    />
+    <EditText android:layout_width="241dp"
+              android:layout_height="52dp"
+
+              android:padding="11dp"
+
+              android:background="@drawable/border"
+              android:inputType="textEmailAddress"
+              android:ems="10"
+              android:id="@+id/TheMSemail"
+              android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/textView6"
+              android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+              app:layout_constraintStart_toStartOf="parent" android:hint="البريد الالكتروني للاخصائي"/>
+    <TextView
+            android:text="الرجاءادخال البريد الإلكتروني للاخصائي"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:id="@+id/textView6" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/TheCGE" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+</android.support.constraint.ConstraintLayout>

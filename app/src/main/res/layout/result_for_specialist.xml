@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+
+    <android.support.design.widget.AppBarLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </LinearLayout>
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content">
+
+            <ImageView
+
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/txt_Time"
+                    android:text="01:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+
+                android:layout_width="15dp"
+
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                    android:id="@+id/cliok"
+
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="date" android:textAlignment="center"/>
+            <TextView
+                    android:id="@+id/txt_result"
+                    android:text="نجحت"
+                    android:layout_marginLeft="20sp"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                    android:id="@+id/txt_right_answer"
+                    android:text="30/30"
+
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btn_filler_total"
+
+                android:text="30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:backgroundTint="#9ad1ea"/>
+
+        <Button
+                android:id="@+id/btn_filler_right"
+
+                android:text="30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:backgroundTint="#98d1a4"/>
+
+
+        <Button
+                android:id="@+id/btn_filler_Worng"
+
+                android:text="30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:backgroundTint="#ec90a2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/LLi"
+    android:background="@drawable/simpleborder">
+
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="27dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/TT2"
+        >
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="الوقت" android:textSize="24sp" android:id="@+id/textView14"/>
+                <Button
+                        android:text="السؤال"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="24sp"
+                        android:background="#ffffff" android:id="@+id/button4"/>
+            </TableRow>
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:id="@+id/textView16"
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textAlignment="textEnd"/>
+                <Button
+                        android:id="@+id/button16"
+                        android:text="السادس"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView10"
+                        android:textAlignment="textEnd"/>
+                <Button
+                        android:text="السابع"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/button"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView17"
+                        android:textAlignment="textEnd"/>
+                <Button
+                        android:text="الثامن"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/button5"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView11"
+                        android:textAlignment="textEnd"/>
+                <Button
+                        android:text="التاسع"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/button2"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView12"
+                        android:textAlignment="textEnd"/>
+                <Button
+                        android:text="العاشر"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/button3"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/TT1"
+                android:background="@drawable/simpleborder"
+                android:padding="15dp"
+        >
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="الوقت" android:textSize="24sp"
+
+                        android:id="@+id/textView1"
+
+                />
+                <Button
+                        android:text="السؤال"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="24sp"
+                        android:background="#ffffff"
+                        android:id="@+id/button7"
+                />
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+
+                        android:text="01:00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2" android:textAlignment="textEnd"/>
+                <Button
+                        android:text="الاول"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button11"/>
+
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:id="@+id/textView4"
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textAlignment="textEnd"/>
+                <Button
+                        android:id="@+id/button12"
+                        android:text="الثاني"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:id="@+id/textView133"
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textAlignment="textEnd"/>
+                <Button
+                        android:id="@+id/button133"
+                        android:text="الثالث"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:id="@+id/textView13"
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textAlignment="textEnd"/>
+                <Button
+                        android:id="@+id/button13"
+                        android:text="الرابع"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:id="@+id/textView15"
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textAlignment="textEnd"/>
+                <Button
+                        android:id="@+id/button15"
+                        android:text="الخامس"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

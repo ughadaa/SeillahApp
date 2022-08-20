@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        tools:context=".MedicalSpecialist.MedicalSpecialistHome" tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/LL0">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/LL01"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="60dp"
+
+            >
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/msresults"
+                        tools:layout_editor_absoluteY="25dp"
+                        tools:layout_editor_absoluteX="117dp" android:id="@+id/imageButton_results"
+                        android:background="#ffffff"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/LL02"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="50dp"
+            >
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/msreport"
+                        tools:layout_editor_absoluteY="25dp"
+                        tools:layout_editor_absoluteX="117dp" android:id="@+id/imageButton_report"
+                        android:background="#ffffff"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

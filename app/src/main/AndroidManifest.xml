@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.ratina.sellahapp">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".Help"/>
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MedicalSpecialist.MedicalSpecialistHome"/>
+        <activity android:name=".Chat.Chatroom">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Chat.chatLatestMessages"/>
+        </activity>
+        <activity android:name=".Register"/>
+        <activity android:name=".CaregiverHome"/>
+        <activity android:name=".Chat.chat">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Chat.chatLatestMessages"/>
+        </activity>
+        <activity android:name=".AddChild"/>
+        <activity android:name=".MedicalSpecialist.ReportGenrating">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MedicalSpecialist.ReportGenratingOfChildren"/>
+        </activity>
+        <activity android:name=".MedicalSpecialist.ViewChildrenResults">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MedicalSpecialist.MedicalSpecialistHome"/>
+        </activity>
+        <activity android:name=".Chat.chatLatestMessages"/>
+        <activity android:name=".AddCaregiver"/>
+        <activity android:name=".Games.Sound10"/>
+        <activity android:name=".Games.Sound9"/>
+        <activity android:name=".Games.Sound8"/>
+        <activity android:name=".Games.sound7"/>
+        <activity android:name=".Games.Games10"/>
+        <activity android:name=".Games.Games9"/>
+        <activity android:name=".Games.Games8"/>
+        <activity android:name=".Games.Games7"/>
+        <activity android:name=".Games.Sound6"/>
+        <activity android:name=".Games.Sound5"/>
+        <activity android:name=".Games.Sound4"/>
+        <activity android:name=".Games.sound3"/>
+        <activity android:name=".Games.Sound2"/>
+        <activity android:name=".Games.Games6"/>
+        <activity android:name=".Games.Games5"/>
+        <activity android:name=".Games.games4"/>
+        <activity android:name=".Games.Games3"/>
+        <activity android:name=".Games.Games2"/>
+        <activity android:name=".Games.Game"/>
+        <activity android:name=".Games.sound_games"/>
+        <activity android:name=".Games.Result"/>
+        <activity android:name=".MedicalSpecialist.ViewResult">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MedicalSpecialist.ViewChildrenResults"/>
+        </activity>
+        <activity android:name=".MedicalSpecialist.ReportGenratingOfChildren">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MedicalSpecialist.MedicalSpecialistHome"/>
+        </activity>
+        <activity android:name=".CaregiverViewReports">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverViewChildrenReports"/>
+        </activity>
+        <activity android:name=".CaregiverViewChildrenReports">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverHome"/>
+        </activity>
+        <activity android:name=".CaregiverViewChildReport">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverViewChildrenReports"/>
+        </activity>
+        <activity android:name=".MedicalSpecialist.ViewResultsByDate">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MedicalSpecialist.ViewChildrenResults"/>
+        </activity>
+        <activity android:name=".ChildHome"/>
+        <activity android:name=".Add_category">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverChooseCategory"/>
+        </activity>
+        <activity android:name=".ChildChooseCategory">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ChildHome"/>
+        </activity>
+        <activity android:name=".CategoryDisplay">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ChildChooseCategory"/>
+        </activity>
+        <activity android:name=".ChildChooseGame">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ChildHome"/>
+        </activity>
+        <activity android:name=".ChildSettings"/>
+        <activity android:name=".CaregiverSettings"/>
+        <activity android:name=".AddImages">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverChooseCategory"/>
+        </activity>
+        <activity android:name=".CaregiverChooseCategory">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverHome"/>
+        </activity>
+        <activity android:name=".CaregiverDeleteCategory"/>
+        <activity android:name=".CaregiverChoosetoDelete">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverChooseCategory"/>
+        </activity>
+        <activity android:name=".CaregiverDisplayedCategory">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CaregiverChooseCategory"/>
+        </activity>
+        <activity android:name=".CaregiverChoosetoDeleteImage"/>
+        <activity android:name=".AddSpecialist">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ChildSettings"/>
+        </activity>
+        <activity android:name=".AddprofileimageforCaregiver">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+
+        tools:context=".ChildHome">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/LL0">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/LL01"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="35dp"
+
+            >
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/categories"
+                        tools:layout_editor_absoluteY="25dp"
+                        tools:layout_editor_absoluteX="117dp" android:id="@+id/imageButton_Categorys"
+                        android:background="#ffffff"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/LL02"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="35dp">
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/games"
+                        tools:layout_editor_absoluteY="25dp"
+                        tools:layout_editor_absoluteX="117dp" android:id="@+id/imageButton_GamesPage"
+                        android:background="#ffffff"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="150dp" android:id="@+id/LL03"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="35dp">
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/chatroom"
+                        tools:layout_editor_absoluteY="25dp"
+                        tools:layout_editor_absoluteX="117dp" android:id="@+id/imageButton_Chat"
+                        android:background="#ffffff"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

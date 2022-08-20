@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                                             android:background="@color/bg"
+
+                                             tools:context=".Add_category">
+
+
+    <ImageView
+
+        android:id="@+id/addCategoryedimage"
+        android:layout_width="184dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <EditText
+
+        android:id="@+id/addcCategoryeditText"
+        android:layout_width="241dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="اسم التصنيف"
+        android:inputType="textPersonName"
+        android:padding="11dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCategoryedimage" />
+
+    <Button
+            android:id="@+id/uploadBtn"
+            style="@style/ButtonStyle1"
+            android:layout_width="135dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="حفظ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chooseBtn"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addcCategoryeditText"
+            app:layout_constraintVertical_bias="0.227"/>
+
+    <Button
+            android:id="@+id/chooseBtn"
+            style="@style/ButtonStyle1"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="144dp"
+            android:text="اختر الصورة"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addcCategoryeditText"
+            app:layout_constraintVertical_bias="0.953"/>
+</android.support.constraint.ConstraintLayout>
